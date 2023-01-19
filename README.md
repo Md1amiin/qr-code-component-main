@@ -1,4 +1,5 @@
 # Challenge solved by Md1amiin (Mohamed Abdilahi Muse)
+
 # Frontend Mentor - QR code component
 
 ![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
