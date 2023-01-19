@@ -1,51 +1,73 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-  }
-  /*
+}
+
+/*
     2. Remove default margin
   */
-  * {
+* {
     margin: 0;
-  }
-  /*
+}
+
+/*
     3. Allow percentage-based heights in the application
   */
-  html, body {
+html,
+body {
     height: 100%;
-  }
-  /*
+}
+
+/*
     Typographic tweaks!
     4. Add accessible line-height
     5. Improve text rendering
   */
-  body {
+body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-  }
-  /*
+}
+
+/*
     6. Improve media defaults
   */
-  img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
     display: block;
     max-width: 100%;
-  }
-  /*
+}
+
+/*
     7. Remove built-in form typography styles
   */
-  input, button, textarea, select {
+input,
+button,
+textarea,
+select {
     font: inherit;
-  }
-  /*
+}
+
+/*
     8. Avoid text overflows
   */
-  p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     overflow-wrap: break-word;
-  }
+}
 
-  
+
 
 //Custom styles
 // Colors
@@ -73,9 +95,8 @@ body {
 
 main {
     background-color: $white;
-    width: 85%;
-    height: 74%;
-    width: 85%;
+    width: 20rem;
+    height: 32rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -94,9 +115,14 @@ main {
     // border: 1px solid red;
 }
 
+@media screen and (max-width: 375px) {
+    main {
+        width: 85%;
+        height: 74%;
+    }
+}
 
-
-.scanImage img{
+.scanImage img {
     border-radius: 12px;
 }
 
